@@ -57,7 +57,6 @@ class Program
         {
             // TODO: Implementera metod för att visa inventarie 
             Console.WriteLine(inventory[i]);
-            Console.WriteLine("HEJ");
         }
     }
     static void Pause()
