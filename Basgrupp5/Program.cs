@@ -11,9 +11,7 @@ class Program
         Console.WriteLine("Välkommen till Fabrikshanteringssystemet!");
 
         while (true)
-
         {
-
             Console.WriteLine("\nVälj en åtgärd:");
 
             Console.WriteLine("1. Lägg till produkt");
@@ -52,5 +50,4 @@ class Program
         // TODO: Implementera metod för att visa inventarie 
 
     }
-
 }
