@@ -48,6 +48,7 @@ class Program
         Console.WriteLine("Vad för produkt vill du lägga till?");
         string? item = Console.ReadLine();
         // TODO: Implementera metod för att lägga till produkt 
+        Console.WriteLine("hej");
     }
 
     static void VisaInventarie()
