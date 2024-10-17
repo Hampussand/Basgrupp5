@@ -47,8 +47,8 @@ class Program
         Console.Clear();
         Console.WriteLine("Vad för produkt vill du lägga till?");
         string? item = Console.ReadLine();
+        inventory.Add(item);
         // TODO: Implementera metod för att lägga till produkt 
-        Console.WriteLine("hej");
     }
 
     static void VisaInventarie()
@@ -57,7 +57,6 @@ class Program
         {
             // TODO: Implementera metod för att visa inventarie 
             Console.WriteLine(inventory[i]);
-            Console.WriteLine("HEJ");
         }
     }
     static void Pause()
