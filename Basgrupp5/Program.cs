@@ -5,11 +5,14 @@ using System.Collections.Generic;
 class Program
 {
     static List<string> inventory = new List<string>();
+    
     static void Main(string[] args)
 
     {
         Console.WriteLine("Välkommen till Fabrikshanteringssystemet!");
-
+        inventory.Add("Truck");
+        inventory.Add("Monster-Truck");
+        inventory.Add("Tuc-Tuc");
         while (true)
         {
             Console.WriteLine("\nVälj en åtgärd:");
@@ -25,9 +28,11 @@ class Program
             {
                 case "1":
                     LäggTillProdukt();
+                    Pause();
                     break;
                 case "2":
                     VisaInventarie();
+                    Pause();
                     break;
                 case "3":
                     return;
@@ -46,8 +51,16 @@ class Program
 
     static void VisaInventarie()
     {
-
-        // TODO: Implementera metod för att visa inventarie 
-
+        for (int i = 0; i < inventory.Count; i++)
+        {
+            // TODO: Implementera metod för att visa inventarie 
+            Console.WriteLine(inventory[i]);
+        }
+    }
+    static void Pause()
+    {
+        Console.WriteLine("Tryck Enter för att gå vidare");
+        Console.ReadLine();
+        Console.Clear();
     }
 }
